@@ -8,8 +8,6 @@ The responsiveness score is computed using a **weighted statistical model** base
 
 ----------
 
-
-
 ## **Mathematical Model**
 
 The responsiveness score is computed using **five key engagement metrics**:
@@ -20,13 +18,42 @@ $$
 
 Where:
 
-| **Metric** | **Definition** | **Weight** |
-|------------|--------------|------------|
-| **ER** (Engagement Rate) | Engagements Count ÷ Impressions Count | **0.3** |
-| **SEP** (Smart Engagement per Follower) | Smart Engagement Points ÷ Followers Count | **0.2** |
-| **FGR** (Follower Growth Rate) | (Current Followers - Followers 7 Days Ago) ÷ Followers 7 Days Ago | **0.2** |
-| **MS** (Mindshare Impact) | Mindshare Value ÷ Mindshare for Similar Projects | **0.2** |
-| **BTI** (Best Tweet Impact) | **Avg. Engagement per Best Tweet** | **0.1** |
+<table>
+<thead>
+<tr>
+<th><b>Metric</b></th>
+<th><b>Definition</b></th>
+<th><b>Weight</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>ER (Engagement Rate)</b></td>
+<td>$$ \frac{\text{Engagements Count}}{\text{Impressions Count}} $$</td>
+<td><b>0.3</b></td>
+</tr>
+<tr>
+<td><b>SEP (Smart Engagement per Follower)</b></td>
+<td>$$ \frac{\text{Smart Engagement Points}}{\text{Followers Count}} $$</td>
+<td><b>0.2</b></td>
+</tr>
+<tr>
+<td><b>FGR (Follower Growth Rate)</b></td>
+<td>$$ \frac{\text{Current Followers} - \text{Followers 7 Days Ago}}{\text{Followers 7 Days Ago}} $$</td>
+<td><b>0.2</b></td>
+</tr>
+<tr>
+<td><b>MS (Mindshare Impact)</b></td>
+<td>$$ \frac{\text{Mindshare Value}}{\text{Mindshare for Similar Projects}} $$</td>
+<td><b>0.2</b></td>
+</tr>
+<tr>
+<td><b>BTI (Best Tweet Impact)</b></td>
+<td><b>Avg. Engagement per Best Tweet</b></td>
+<td><b>0.1</b></td>
+</tr>
+</tbody>
+</table>
 
 Each **raw score** is then **normalized** using **Min-Max Scaling**:
 
