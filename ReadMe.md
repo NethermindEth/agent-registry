@@ -13,21 +13,26 @@ The responsiveness score is computed using a **weighted statistical model** base
 The responsiveness score is computed using **five key engagement metrics**:
 
 $$
-S_{\text{raw}} = (w_1 \times ER) + (w_2 \times SEP) + (w_3 \times FGR) + (w_4 \times MS) + (w_5 \times BTI)
+S_{raw} = (w_1 \times ER) + (w_2 \times SEP) + (w_3 \times FGR) + (w_4 \times MS) + (w_5 \times BTI)
 $$
 
 Where:
-**Engagement Rate (ER):**  
-$$ ER = \frac{\text{Engagements Count}}{\text{Impressions Count}} $$
 
-**Smart Engagement per Follower (SEP):**  
-$$ SEP = \frac{\text{Smart Engagement Points}}{\text{Followers Count}} $$
+$$
+ER = \frac{\text{Engagements Count}}{\text{Impressions Count}}
+$$
 
-**Follower Growth Rate (FGR):**  
-$$ FGR = \frac{\text{Current Followers} - \text{Followers 7 Days Ago}}{\text{Followers 7 Days Ago}} $$
+$$
+SEP = \frac{\text{Smart Engagement Points}}{\text{Followers Count}}
+$$
 
-**Mindshare Impact (MS):**  
-$$ MS = \frac{\text{Mindshare Value}}{\text{Mindshare for Similar Projects}} $$
+$$
+FGR = \frac{\text{Current Followers} - \text{Followers 7 Days Ago}}{\text{Followers 7 Days Ago}}
+$$
+
+$$
+MS = \frac{\text{Mindshare Value}}{\text{Mindshare for Similar Projects}}
+$$
 
 **Best Tweet Impact (BTI):**  
 **Avg. Engagement per Best Tweet**
@@ -35,7 +40,7 @@ $$ MS = \frac{\text{Mindshare Value}}{\text{Mindshare for Similar Projects}} $$
 Each **raw score** is then **normalized** using **Min-Max Scaling**:
 
 $$
-S_{\text{normalized}} = 100 \times \frac{S_{\text{raw}} - S_{\text{min}}}{S_{\text{max}} - S_{\text{min}}}
+S_{normalized} = 100 \times \frac{S_{raw} - S_{min}}{S_{max} - S_{min}}
 $$
 
 
