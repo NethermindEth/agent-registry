@@ -18,27 +18,25 @@ $$
 
 Where:
 
-**Engagement Rate (ER):**  
-$$ 
-ER = \frac{\text{Engagements Count}}{\text{Impressions Count}} 
+$$
+Engagement Rate (ER) = \frac{\text{Engagements Count}}{\text{Impressions Count}}
 $$
 
-**Smart Engagement per Follower (SEP):**  
-$$ 
-SEP = \frac{\text{Smart Engagement Points}}{\text{Followers Count}} 
+$$
+Smart Engagement per Follower (SEP) = \frac{\text{Smart Engagement Points}}{\text{Followers Count}}
 $$
 
-**Follower Growth Rate (FGR):**  
-$$ 
-FGR = \frac{\text{Current Followers} - \text{Followers 7 Days Ago}}{\text{Followers 7 Days Ago}} 
+$$
+Follower Growth Rate (FGR) = \frac{\text{Current Followers} - \text{Followers 7 Days Ago}}{\text{Followers 7 Days Ago}}
 $$
 
-**Mindshare Impact (MS):**  
-$$ 
-MS = \frac{\text{Mindshare Value}}{\text{Mindshare for Similar Projects}} 
+$$
+Mindshare Impact (MS) = \frac{\text{Mindshare Value}}{\text{Mindshare for Similar Projects}}
 $$
 
-- **Best Tweet Impact (BTI):**  Avg. Engagement per Best Tweet
+$$
+Best Tweet Impact (BTI) = Avg. Engagement per Best Tweet
+$$
 
 Each **raw score** is then **normalized** using **Min-Max Scaling**:
 
