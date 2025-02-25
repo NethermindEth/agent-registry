@@ -128,7 +128,7 @@ def plot_responsiveness_graph(sorted_agents, limit):
     plt.barh(agent_names[::-1], scores[::-1])
     plt.xlabel("Responsiveness Score", fontsize=12)
     plt.ylabel("AI Agents", fontsize=12)
-    plt.title("Top ${limit} Most Responsive AI Agents on Twitter", fontsize=14)
+    plt.title("Top {} Most Responsive AI Agents on Twitter".format(limit), fontsize=14)
     plt.xlim(0, 100)
     plt.grid(axis="x", linestyle="--", alpha=0.6)
 
