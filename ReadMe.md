@@ -22,10 +22,10 @@ Where:
 
 | **Metric** | **Definition** | **Weight** |
 |------------|--------------|------------|
-| **ER** (Engagement Rate) | $ \frac{\text{Engagements Count}}{\text{Impressions Count}} $ | **0.3** |
-| **SEP** (Smart Engagement per Follower) | $ \frac{\text{Smart Engagement Points}}{\text{Followers Count}} $ | **0.2** |
-| **FGR** (Follower Growth Rate) | $ \frac{\text{Current Followers} - \text{Followers 7 Days Ago}}{\text{Followers 7 Days Ago}} $ | **0.2** |
-| **MS** (Mindshare Impact) | $ \frac{\text{Mindshare Value}}{\text{Mindshare for Similar Projects}} $ | **0.2** |
+| **ER** (Engagement Rate) | Engagements Count ÷ Impressions Count | **0.3** |
+| **SEP** (Smart Engagement per Follower) | Smart Engagement Points ÷ Followers Count | **0.2** |
+| **FGR** (Follower Growth Rate) | (Current Followers - Followers 7 Days Ago) ÷ Followers 7 Days Ago | **0.2** |
+| **MS** (Mindshare Impact) | Mindshare Value ÷ Mindshare for Similar Projects | **0.2** |
 | **BTI** (Best Tweet Impact) | **Avg. Engagement per Best Tweet** | **0.1** |
 
 Each **raw score** is then **normalized** using **Min-Max Scaling**:
