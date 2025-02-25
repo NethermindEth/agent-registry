@@ -1,5 +1,5 @@
 
-# **AI Agent Registry **
+# AI Agent Registry 
 
 
 ## **How It Works**
